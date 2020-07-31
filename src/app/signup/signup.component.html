@@ -1,0 +1,31 @@
+<div class="card">
+    <form (ngSubmit)="AddUser()">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td><label>Username</label></td>
+                          <td><input type="text" name="u_id" [(ngModel)]="newUser.username" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Email</label></td>
+                          <td><input type="text" name="u_id" [(ngModel)]="newUser.email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label>Password</label></td>
+                          <td><input type="password" name="u_id" [(ngModel)]="newUser.password" required></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button class="btn btn-primary">Signup</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
